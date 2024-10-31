@@ -31,7 +31,7 @@ autoload -U compinit && compinit
 
 
 
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
@@ -53,7 +53,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
-alias cm='cmatrix -C yellow -s -b -u 5 -a'
+alias cm='cmatrix -C cyan -s -b -u 5 -a'
 alias py="python3"
 alias python="python3"
 # Shell integrations
@@ -62,3 +62,4 @@ alias python="python3"
 
 # Created by `pipx` on 2024-10-24 04:57:51
 export PATH="$PATH:/home/bluequbit/.local/bin"
+export PATH="$PATH:/usr/local/go/bin"
